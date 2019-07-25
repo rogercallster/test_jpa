@@ -4,16 +4,16 @@ public class Main {
 
     public static void main(String[] str) {
         EntityManager entityManager = getJpaEntityManager();
-        User user = entityManager.find(User.class, "abc");
+//        User user = entityManager.find(User.class, "abc");
+//        entityManager.persist(new User("ankur", "saran"));
+//        entityManager.getTransaction().begin();
+//        user.setName("Rock");
+//        user.setEmail("rock@testing.com");
+//        entityManager.merge(user);
+//        entityManager.getTransaction().commit();
 
         entityManager.getTransaction().begin();
-        user.setName("Rock");
-        user.setEmail("rock@testing.com");
-        entityManager.merge(user);
-        entityManager.getTransaction().commit();
-
-        entityManager.getTransaction().begin();
-        entityManager.persist(new User("test", "test@domain.com"));
+        entityManager.persist(new User("212", "hello@domain.com"));
         entityManager.getTransaction().commit();
 
     }

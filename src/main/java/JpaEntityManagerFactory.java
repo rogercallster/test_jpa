@@ -53,7 +53,7 @@ public class JpaEntityManagerFactory {
     private DataSource getDataSource() {
         PropertiesHandler properties = null;
         try {
-            properties = new PropertiesHandler("/Users/ansaran/dev/test_jpa/src/main/resources/recommendation.properties");
+            properties = new PropertiesHandler("src/main/resources/jpa.properties");
             System.out.println("Ankur ::::: > getting properties" + properties.toString());
         } catch (IOException e) {
             System.out.println("testing");

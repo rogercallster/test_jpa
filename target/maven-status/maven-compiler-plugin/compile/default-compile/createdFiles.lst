@@ -1,6 +1,0 @@
-Main.class
-User.class
-HibernatePersistenceUnitInfo.class
-PropertiesHandler.class
-Main$EntityManagerHolder.class
-JpaEntityManagerFactory.class
